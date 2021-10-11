@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState, useCallback } from 'react';
 import orderBy from 'lodash/orderBy';
 import isNil from 'lodash/isNil';
 import { toast } from 'react-toastify';
@@ -57,7 +57,7 @@ const VerificationProvider = props => {
   /**
    *  on submit form handler
    */
-  const onSubmit = async () => {
+  const onSubmit = useCallback(async () => {
     try {
       setSubmit(true);
       const saveData = verificationCheckList
@@ -78,7 +78,7 @@ const VerificationProvider = props => {
     } finally {
       setSubmit(false);
     }
-  };
+  }, [setSubmit, setSuccess, verificationCheckList]);
 
   /**
    * first render handler
