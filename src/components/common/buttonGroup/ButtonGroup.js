@@ -1,5 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Button from '../button/Button';
 
 import './ButtonGroup.scss';
@@ -29,5 +31,17 @@ const ButtonGroup = React.forwardRef(
     );
   }
 );
+
+ButtonGroup.propTypes = {
+  options: PropTypes.array,
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func
+};
+
+ButtonGroup.defaultProps = {
+  options: [],
+  disabled: false,
+  onChange: () => null
+};
 
 export default ButtonGroup;

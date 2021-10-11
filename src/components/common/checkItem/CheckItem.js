@@ -1,6 +1,8 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ButtonGroupWrapper from '../buttonGroupWrapper/ButtonGroupWrapper';
 
 import './CheckItem.scss';
@@ -22,6 +24,15 @@ const CheckItem = ({ description, disabled, ...props }) => {
       </div>
     </div>
   );
+};
+
+CheckItem.propTypes = {
+  description: PropTypes.string.isRequired,
+  disabled: PropTypes.bool
+};
+
+CheckItem.defaultProps = {
+  disabled: false
 };
 
 export default CheckItem;

@@ -6,6 +6,7 @@ import './Button.scss';
 const Button = ({ children, customClassName, ...rest }) => {
   return (
     <button
+      data-test="common-button"
       className={`Button ${customClassName && customClassName}`}
       {...rest}
     >
