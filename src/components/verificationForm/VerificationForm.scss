@@ -1,0 +1,48 @@
+.checkItemListWrap {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  .disabled {
+    opacity: 0.5;
+  }
+}
+
+.verificationSubmit {
+  margin-top: 40px;
+  height: 35px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  background-color: var(--primary-color);
+  color: white;
+  &:disabled {
+    color: #bdc0cf;
+    border-color: #e6ebf4;
+    background-color: #e6ebf4;
+  }
+  &:enabled:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+  }
+  &:enabled:focus {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+.messageBox {
+  width: 400px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  .Button {
+    text-transform: none !important;
+  }
+}

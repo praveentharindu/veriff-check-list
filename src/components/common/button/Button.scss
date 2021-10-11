@@ -1,0 +1,30 @@
+.Button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  color: #004e5f;
+  position: relative;
+  height: 30px;
+  padding: 0 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:disabled {
+    color: #bdc0cf;
+    border-color: #e6ebf4;
+    cursor: not-allowed;
+  }
+}
+
+.Button:enabled:hover,
+.Button:enabled:focus {
+  background-color: var(--highlight-color);
+}

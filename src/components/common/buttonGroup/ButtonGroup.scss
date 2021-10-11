@@ -1,0 +1,26 @@
+.primary {
+  background-color: #004e5f !important;
+  border-color: #004e5f !important;
+  color: #fff !important;
+  &:disabled {
+    color: #bdc0cf !important;
+    background-color: #e6ebf4 !important;
+    border-color: #e6ebf4 !important;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  button {
+    text-transform: none;
+    &:nth-child(1) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right-width: 0;
+    }
+    &:nth-child(2) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

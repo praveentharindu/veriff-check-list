@@ -1,0 +1,33 @@
+.checkItemRow {
+  display: flex;
+  padding: 10px;
+  &:disabled {
+    opacity: 0.6;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &:hover {
+    background-color: #e6ebf4;
+  }
+  &:focus,
+  &:focus-within {
+    background-color: var(--highlight-color);
+    outline: none;
+  }
+
+  .itemLabel {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+.checkItemRow.disabled:hover {
+  background-color: transparent !important;
+}
+.checkItemListWrap {
+  .disabled {
+    opacity: 0.5;
+  }
+}
