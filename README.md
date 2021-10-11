@@ -13,7 +13,7 @@ shortcuts. Keyboard shortcuts work as follows:<br>
 
 ## Available Scripts
 
-First you need to install dependencies using npm
+First you need to install dependencies using yarn
 
 ### `yarn`
 
