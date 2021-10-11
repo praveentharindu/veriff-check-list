@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Checks can be answered by either mouse (click on Yes or No) or via keyboard
+shortcuts. Keyboard shortcuts work as follows:
+
+● Arrow Up and Arrow Down to move between checks
+● 1 to answer check as Yes
+● 2 to answer check as No
+
 ## Available Scripts
 
 First you need to install dependencies using npm
